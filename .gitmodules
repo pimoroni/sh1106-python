@@ -1,0 +1,6 @@
+[submodule "luma.oled"]
+	path = luma.oled
+	url = https://github.com/rm-hull/luma.oled
+[submodule "luma.core"]
+	path = luma.core
+	url = https://github.com/rm-hull/luma.core
