@@ -14,11 +14,13 @@ git submodule foreach "
 	git pull origin master
 
 	printf \"Installing \$name for Python 2..\n\"
-	python setup.py install
+	python setup.py --quiet bdist_wheel
+	python -m pip install dist/*.whl
 
 	if [ -f \"/usr/bin/python3\" ]; then
 		printf \"Installing \$name for Python 3..\n\"
-		python3 setup.py install
+		python3 setup.py --quiet bdist_wheel
+		python3 -m pip install dist/*.whl
 	fi
 
 	printf \"\n\"
