@@ -10,7 +10,13 @@ And plenty of examples here: https://github.com/rm-hull/luma.examples
 
 # Installing
 
-Latest/development library from GitHub:
+## Official Luma Library with SH1106 Support:
+
+* Enable i2c: `sudo raspi-config nonint do_i2c 0`
+* Install the library: `sudo pip3 install luma luma.oled`
+* (Optional) grab the examples: `git clone https://github.com/rm-hull/luma.examples`
+
+## Latest/development library from GitHub:
 
 * `git clone https://github.com/pimoroni/sh1106-python`
 * `cd sh1106-python`
